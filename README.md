@@ -1,4 +1,4 @@
-### Statement of Purpose (SOP) Generator -- docx version
+# Statement of Purpose (SOP) Generator -- docx version
 
 ---
 
@@ -6,7 +6,9 @@ A simple and stupid module for generating SOPs for different schools.
 
 
 
-##### Prerequisites
+
+
+### Prerequisites
 
 ---
 
@@ -15,11 +17,13 @@ A simple and stupid module for generating SOPs for different schools.
 
 
 
-##### How to use (Mac)
+
+
+### How to use (Mac)
 
 ---
 
-###### Method 1: Run from terminal
+##### Method 1: Run from terminal
 
 Run terminal from the folder that contains "GEN_SOP.py" and two prerequisite files.
 
@@ -35,7 +39,9 @@ python GEN_SOP.py
 
 
 
-###### Method 2: Run as module
+
+
+##### Method 2: Run as module
 
 ```python
 from GEN_SOP import GEN_SOP
@@ -55,7 +61,9 @@ output_path : Output path where you want to save your output files.
 
 
 
-Contributor
+
+
+### Contributor
 
 ---
 
