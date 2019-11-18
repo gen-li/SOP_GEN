@@ -4,7 +4,7 @@ A simple and stupid module for generating SOPs for different schools.
 
 
 
-### Purpose
+### Description
 
 Using the same SOP content framework, the model will generate multiple SOPs where the school and program names will be replaced with each target school and program names.
 
