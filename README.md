@@ -4,15 +4,15 @@ A simple and stupid module for generating SOPs for different schools.
 
 
 
-### Description
+## Description
 
-Using the same SOP content framework, the model will generate multiple SOPs where the school and program names will be replaced with each target school and program names.
+Using the same SOP content framework, the model will generate multiple SOPs where the school and program names will be replaced with target school and program names.
 
 ![Alt Text](https://github.com/gen-li/SOP_GEN/blob/master/sop_gen1.gif)
 
 
 
-### Prerequisites
+## Prerequisites
 
 * An excel that includes school names and program names
 
@@ -20,7 +20,7 @@ Using the same SOP content framework, the model will generate multiple SOPs wher
 
 
 
-### How to use (Mac)
+## How to use (Mac)
 
 #### Method 1: Run from terminal
 
@@ -62,6 +62,6 @@ output_path : Output path where you want to save your output files.
 
 
 
-### Contributor
+## Contributor
 
 * [Gen Li](https://www.gen-li.com)
