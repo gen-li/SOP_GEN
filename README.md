@@ -4,7 +4,7 @@ A simple and stupid module for generating SOPs for different schools.
 
 
 
-###  Prerequisites
+### Prerequisites
 
 * An excel that includes school names and program names
 
@@ -14,15 +14,15 @@ A simple and stupid module for generating SOPs for different schools.
 
 ### How to use (Mac)
 
-##### Method 1: Run from terminal
+#### Method 1: Run from terminal
 
-Run terminal from the folder that contains "GEN_SOP.py" and two prerequisite files.
+Run "GEN_SOP.py" in terminal from the folder that contains "**GEN_SOP.py**" and **two prerequisite files**.
 
-1. Name the excel file of school information as "school_list.xlsx". 
-2. In "school_list.xlsx", please make sure that the school and program column names are "School" and "Program", respectively. (TAKE CARE OF THE FIRST CAPITAL LETTER)
-3. Name the docx as "SOP_template.docx"
-4. In your "SOP_template.docx", please label the school position as "[SCHOOL_NAME]". Please label the program position as "[PROGRAM_NAME]" 
-5. Run command from terminal
+1. Name the school list excel file as "**school_list.xlsx**". 
+2. In "school_list.xlsx", please make sure that the school and program column names are "**School**" and "**Program**", respectively. (TAKE CARE OF THE FIRST CAPITAL LETTER)
+3. Name the docx as "**SOP_template.docx**"
+4. In your "SOP_template.docx", please label the school position as "**[SCHOOL_NAME]**". Please label the program position as "**[PROGRAM_NAME]**" 
+5. Run command below from terminal
 
 ```python
 python GEN_SOP.py
@@ -32,7 +32,7 @@ python GEN_SOP.py
 
 
 
-##### Method 2: Run as module
+#### Method 2: Run as module
 
 ```python
 from GEN_SOP import GEN_SOP
