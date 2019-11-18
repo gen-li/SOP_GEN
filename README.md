@@ -4,15 +4,11 @@ A simple and stupid module for generating SOPs for different schools.
 
 
 
-
-
-### Prerequisites
+###  Prerequisites
 
 * An excel that includes school names and program names
 
 * A docx file that includes statement template
-
-
 
 
 
