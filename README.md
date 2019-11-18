@@ -6,7 +6,7 @@ A simple and stupid module for generating SOPs for different schools.
 
 ## Description
 
-Using the same SOP content framework, the model will generate multiple SOPs where the school and program names will be replaced with target school and program names.
+Using the same SOP content framework, the model will generate multiple SOPs for different schools by replacing the school and program names with the target school and program in the statement.
 
 ![Alt Text](https://github.com/gen-li/SOP_GEN/blob/master/sop_gen1.gif)
 
