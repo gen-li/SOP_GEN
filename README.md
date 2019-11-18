@@ -1,6 +1,4 @@
-# Statement of Purpose (SOP) Generator -- docx version
-
----
+# Statement of Purpose (SOP) Generator -- docx version (DansonGo 5)
 
 A simple and stupid module for generating SOPs for different schools.
 
@@ -10,9 +8,8 @@ A simple and stupid module for generating SOPs for different schools.
 
 ### Prerequisites
 
----
-
 * An excel that includes school names and program names
+
 * A docx file that includes statement template
 
 
@@ -20,8 +17,6 @@ A simple and stupid module for generating SOPs for different schools.
 
 
 ### How to use (Mac)
-
----
 
 ##### Method 1: Run from terminal
 
@@ -64,7 +59,5 @@ output_path : Output path where you want to save your output files.
 
 
 ### Contributor
-
----
 
 * [Gen Li](https://www.gen-li.com)
