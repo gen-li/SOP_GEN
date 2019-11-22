@@ -1,22 +1,23 @@
 # Statement of Purpose (SOP) Generator -- docx version (DansonGo 5)
 
-A simple and stupid module for generating SOPs for different schools.
+A simple module for generating a bunch of SOPs for different schools.
 
 
 
 ## Description
 
-Using the same SOP content framework, the model will generate multiple SOPs for different schools by replacing the school and program names with the target school and program in the statement.
+Using the same content framework, the model will generate multiple SOPs for different schools by replacing the school and program names with the target school and program in the statement.
 
-![Alt Text](https://github.com/gen-li/SOP_GEN/blob/master/sop_gen1.gif)
+
+
+![Alt Text](sop_gen1.gif)
 
 
 
 ## Prerequisites
 
-* An excel that includes school names and program names
-
-* A docx file that includes statement template
+- An excel that includes school names and program names (e.g., [school_list.xlsx](school_list.xlsx))
+- A docx file of your statement template (e.g., [SOP_template.docx](SOP_template.docx))
 
 
 
@@ -26,11 +27,17 @@ Using the same SOP content framework, the model will generate multiple SOPs for 
 
 Run "GEN_SOP.py" in terminal from the folder that contains "**GEN_SOP.py**" and **two prerequisite files**.
 
-1. Name the school list excel file as "**school_list.xlsx**". 
+1. Rename your school list excel file as "**school_list.xlsx**".
+
 2. In "school_list.xlsx", please make sure that the school and program column names are "**School**" and "**Program**", respectively. (TAKE CARE OF THE FIRST CAPITAL LETTER)
-3. Name the docx as "**SOP_template.docx**"
-4. In your "SOP_template.docx", please label the school position as "**[SCHOOL_NAME]**". Please label the program position as "**[PROGRAM_NAME]**" 
-5. Run command below from terminal
+
+3. Rename your docx as "**SOP_template.docx**"
+
+4. In your "SOP_template.docx", please label the school position as "**[SCHOOL_NAME]**". Please label the program position as "**[PROGRAM_NAME]**"
+
+5. Run the command below from terminal
+
+   
 
 ```python
 python GEN_SOP.py
