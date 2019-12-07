@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="DansonGo 5", # Replace with your own username
-    version="0.0.2",
+    version="0.0.21",
     author="Gen Li",
     author_email="gen.li@yale.edu",
     description="A simple module for generating a bunch of SOPs for different schools.",
