@@ -33,6 +33,7 @@ class GEN_SOP(object):
 
     Notes
     -----
+    
     """
 
     def __init__(self,school_list,SOP_temp_file,School_var='School',Program_var='Program',output_path=os.getcwd()):

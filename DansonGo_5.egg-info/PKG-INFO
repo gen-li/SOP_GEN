@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: DansonGo-5
-Version: 0.0.1
+Version: 0.0.2
 Summary: A simple module for generating a bunch of SOPs for different schools.
 Home-page: https://github.com/gen-li/SOP_GEN
 Author: Gen Li
@@ -14,7 +14,7 @@ Description: # Statement of Purpose (SOP) Generator -- docx version (DansonGo 5)
         
         ## Description
         
-        Using the same content framework, the model will generate multiple SOPs for different schools by replacing the school and program names with the target school and program in the statement.
+        Using the same content framework, the package will generate multiple SOPs for different schools by replacing the school and program names with the target school and program in the statement.
         
         
         
@@ -31,21 +31,55 @@ Description: # Statement of Purpose (SOP) Generator -- docx version (DansonGo 5)
         
         ## How to use (Mac)
         
-        #### Method 1: Run from terminal
+        #### Method 1: Run as package
         
-        Run "GEN_SOP.py" in terminal from the folder that contains "**GEN_SOP.py**" and **two prerequisite files**.
+        **Step 1:** Pip Install package from your terminal 
         
-        1. Rename your school list excel file as "**school_list.xlsx**".
+        ```python
+        pip install DansonGo-5
+        ```
         
-        2. In "school_list.xlsx", please make sure that the school and program column names are "**School**" and "**Program**", respectively. (TAKE CARE OF THE FIRST CAPITAL LETTER)
         
-        3. Rename your docx as "**SOP_template.docx**"
         
-        4. In your "SOP_template.docx", please label the school position as "**[SCHOOL_NAME]**". Please label the program position as "**[PROGRAM_NAME]**"
+        **Step 2:** Generate SOPs
+        
+        ```python
+        from SOP_GEN.GEN_SOP import GEN_SOP
+        
+        school_list = "~/school_list.xlsx"
+        SOP_temp_file = "~/SOP_template.docx"
+        
+        GEN_SOP(school_list,SOP_temp_file,School_var,Program_var,output_path).gen_sop()
+        ```
+        
+        school_list : The excel file path where the list of schools and programs is saved.
+        
+        SOP_temp_file : The docx file path of your SOP template.
+        
+        School_var : The column name where the school name is saved in your school list. The default value is "School".
+        
+        Program_var : The column name where the program info is saved in your school list. The default value is "Program".
+        
+        output_path : Output path where you want to save your output files. The default value is the current working directory.
+        
+        
+        
+        #### Method 2: Run from terminal
+        
+        **Step 1:** Clone the SOP_GEN from GitHub.
+        
+        **Step 2:** Run "GEN_SOP.py" in terminal from the folder that contains "GEN_SOP.py" and two prerequisite files.
+        
+        1. Rename your school list excel file as "school_list.xlsx".
+        
+        2. In "school_list.xlsx", please make sure that the school and program column names are "School" and "Program", respectively. (TAKE CARE OF THE FIRST CAPITAL LETTER)
+        
+        3. Rename your docx as "SOP_template.docx"
+        
+        4. In your "SOP_template.docx", please label the school position as "[SCHOOL_NAME]". Please label the program position as "[PROGRAM_NAME]"
         
         5. Run the command below from terminal
         
-           
         
         ```python
         python GEN_SOP.py
@@ -55,23 +89,7 @@ Description: # Statement of Purpose (SOP) Generator -- docx version (DansonGo 5)
         
         
         
-        #### Method 2: Run as module
         
-        ```python
-        from GEN_SOP import GEN_SOP
-        
-        GEN_SOP(school_list,SOP_temp_file,School_var,Program_var,output_path).gen_sop()
-        ```
-        
-        school_list : The excel file path where the list of schools and programs is saved.
-        
-        SOP_temp_file : The docx file path of your SOP template.
-        
-        School_var : The column name where the school name is saved in your school list.
-        
-        Program_var : The column name where the program info is saved in your school list.
-        
-        output_path : Output path where you want to save your output files.
         
         
         
