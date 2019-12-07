@@ -1,0 +1,7 @@
+pandas
+numpy
+python-docx 
+scipy
+hyperopt
+sphinx>=2.2
+
