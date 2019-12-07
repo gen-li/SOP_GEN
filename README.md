@@ -37,22 +37,21 @@ pip install DansonGo-5
 
 ```python
 from SOP_GEN.GEN_SOP import GEN_SOP
+import os
 
-school_list = "~/school_list.xlsx"
-SOP_temp_file = "~/SOP_template.docx"
+# Initial parameters
+school_list = "~/school_list.xlsx" # The excel file path of your school and program list
+SOP_temp_file = "~/SOP_template.docx" # The docx file path of your SOP template.
+School_var = "School" # The column name where school names are saved in your school list.
+Program_var = "Program" # The column name where program names are saved in your school list.
+output_path = os.getcwd() # Output path where you want to save your output files.
 
+# Generate SOPs
 GEN_SOP(school_list,SOP_temp_file,School_var,Program_var,output_path).gen_sop()
+
 ```
 
-school_list : The excel file path where the list of schools and programs is saved.
 
-SOP_temp_file : The docx file path of your SOP template.
-
-School_var : The column name where the school name is saved in your school list. The default value is "School".
-
-Program_var : The column name where the program info is saved in your school list. The default value is "Program".
-
-output_path : Output path where you want to save your output files. The default value is the current working directory.
 
 
 
